@@ -1,0 +1,12 @@
+.button {
+	@apply inline-block px-[24px] text-white py-[11.5px] rounded-[5px] font-[13px] text-center box-border;
+}
+.primary {
+	@apply bg-primaryBtn;
+}
+.ghost {
+	@apply bg-white;
+}
+.outlined {
+	@apply border-outlineColor border-[1px];
+}
