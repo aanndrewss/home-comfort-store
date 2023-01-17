@@ -1,15 +1,29 @@
+@import '../../styles/media';
+
 .wrapper {
 	@apply grid grid-cols-[auto_78px_minmax(320px,_1368px)_auto] min-h-[100vh] grid-rows-[auto_1fr_auto];
 	grid-template-areas:
 		'. header header .'
 		'. sidebar body .'
 		'footer footer footer footer';
+
+	@include media(tablet) {
+		@apply grid grid-cols-[minmax(320px,_1fr)];
+		grid-template-areas:
+			'header'
+			'body'
+			'footer';
+	}
 	.header {
 		grid-area: header;
 	}
 
 	.sidebar {
 		grid-area: sidebar;
+
+		@include media(tablet) {
+			@apply hidden;
+		}
 	}
 
 	.body {

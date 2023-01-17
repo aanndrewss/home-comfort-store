@@ -7,5 +7,5 @@ export interface ButtonProps
 	> {
 	children: ReactNode
 	appearance: 'primary' | 'ghost'
-	outline: true | false
+	outline?: true | false
 }

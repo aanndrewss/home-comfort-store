@@ -1,0 +1,42 @@
+@import '../../../styles/media';
+
+.heroBlock {
+	@apply bg-cover min-h-[100vh] px-[88px] py-[56px] grid grid-cols-[1fr_auto_1fr] grid-rows-[50px_auto_auto];
+	background-image: url('./assets/HeroBlock.png');
+
+	@include media(laptop) {
+		@apply px-[56px] py-[50px];
+	}
+	@include media(tablet) {
+		@apply px-[44px] py-[50px] grid-rows-[auto_auto];
+	}
+	@include media(mobile) {
+		@apply px-[20px] py-[48px];
+	}
+
+	.cartWrapper {
+		@apply flex items-center justify-end gap-[25px] col-start-3 col-end-4;
+		.cartBtn {
+			@apply bg-white p-[15px] rounded-full;
+		}
+
+		@include media(tablet) {
+			@apply hidden;
+		}
+	}
+	.heading {
+		@apply text-[78px] leading-[78px] col-start-1 col-end-4;
+	}
+	.secondHeading {
+		@apply text-[16px] leading-[21px] mt-[24px] font-thin col-start-1 col-end-3;
+	}
+	.calcBtn {
+		@apply col-start-1 col-end-3 mt-[48px];
+	}
+	.switch {
+		@apply flex flex-row gap-[7px] col-start-1 col-end-3;
+		.switcher {
+			@apply cursor-pointer;
+		}
+	}
+}
