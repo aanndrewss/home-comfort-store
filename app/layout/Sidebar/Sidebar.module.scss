@@ -1,0 +1,9 @@
+.sidebar {
+	@apply px-[21px] py-[45px] flex flex-col items-center gap-[46px];
+	.logo {
+		@apply bg-primaryBtn w-[30px] text-white h-[30px] rounded-full text-[10px] flex items-center justify-center;
+	}
+	.search {
+		@apply cursor-pointer mt-[100px];
+	}
+}

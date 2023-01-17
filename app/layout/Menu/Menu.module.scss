@@ -1,0 +1,6 @@
+.menu {
+	@apply flex flex-col gap-[16px] items-center;
+	.menuItem {
+		@apply cursor-pointer;
+	}
+}

@@ -1,7 +1,7 @@
 @import '../../styles/media';
 
 .wrapper {
-	@apply grid grid-cols-[auto_78px_minmax(320px,_1368px)_auto] min-h-[100vh] grid-rows-[auto_1fr_auto];
+	@apply grid grid-cols-[auto_72px_minmax(320px,_1368px)_auto] min-h-[100vh] grid-rows-[auto_1fr_auto];
 	grid-template-areas:
 		'. header header .'
 		'. sidebar body .'
