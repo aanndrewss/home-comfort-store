@@ -15,6 +15,7 @@ export const Button = ({
 			className={cn(styles.button, className, {
 				[styles.primary]: appearance == 'primary',
 				[styles.ghost]: appearance == 'ghost',
+				[styles.white]: appearance == 'white',
 				[styles.outlined]: outline == true
 			})}
 			{...props}

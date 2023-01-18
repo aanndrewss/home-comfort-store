@@ -19,7 +19,7 @@ export const HeroBlock = () => {
 				<h5 className={styles.secondHeading}>
 					«Lorem» — производитель изделий для внутренней и внешней lorem
 				</h5>
-				<Button appearance="ghost" className={styles.calcBtn}>
+				<Button appearance="white" className={styles.calcBtn}>
 					Calculator
 				</Button>
 			</div>

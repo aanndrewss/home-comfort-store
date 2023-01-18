@@ -7,8 +7,12 @@
 	@apply bg-primaryBtn hover:bg-hoverPrimary transition-all duration-[0.2s];
 }
 .ghost {
-	@apply bg-white text-outlineColor hover:bg-hoverSecondary transition-all duration-[0.2s];
+	@apply bg-transparent text-white transition-all duration-[0.2s];
 }
 .outlined {
-	@apply border-outlineColor text-outlineColor border-[1px];
+	@apply border-outlineColor border-[1px];
+}
+
+.white {
+	@apply bg-white text-outlineColor hover:bg-hoverSecondary transition-all duration-[0.2s];
 }

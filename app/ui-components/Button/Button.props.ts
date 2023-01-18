@@ -6,6 +6,6 @@ export interface ButtonProps
 		HTMLButtonElement
 	> {
 	children: ReactNode
-	appearance: 'primary' | 'ghost'
+	appearance: 'primary' | 'ghost' | 'white'
 	outline?: true | false
 }
