@@ -5,6 +5,7 @@ const outlineColor = '#052E4C'
 const footerColor = '#262626'
 const hoverSecondary = '#d9d9d9'
 const hoverPrimary = '#933c5c'
+const darkBlue = '#052E4C'
 
 module.exports = {
 	content: ['./pages/**/*.{js,ts,jsx,tsx}', './app/**/*.{js,ts,jsx,tsx}'],
@@ -17,7 +18,8 @@ module.exports = {
 				outlineColor,
 				footerColor,
 				hoverSecondary,
-				hoverPrimary
+				hoverPrimary,
+				darkBlue
 			}
 		}
 	},

@@ -1,0 +1,91 @@
+@import '../../../styles/media';
+
+.wrapper {
+	@apply min-h-[672px] grid grid-cols-[88px_1fr_1fr_1fr_1fr_160px] grid-rows-[192px_1fr_1fr];
+	.title {
+		@apply text-[300px] grid col-start-1 col-end-7 row-start-1 row-end-2 text-white opacity-[0.05];
+		> h1 {
+			@apply mt-[-100px];
+			@include media(laptop) {
+				@apply text-[99px] pt-[80px] ml-[20px];
+			}
+		}
+		@include media(laptop) {
+			@apply grid row-start-1 row-end-2 col-start-1 col-end-2;
+		}
+	}
+	.firstColorBlock {
+		@apply grid col-start-1 col-end-2 row-start-1 row-end-4 bg-primary;
+		@include media(laptop) {
+			@apply grid col-start-1 col-end-4 row-start-1 row-end-6;
+		}
+	}
+	.secondColorBlock {
+		@apply grid col-start-2 col-end-6 row-start-1 row-end-2 bg-primary;
+		@include media(laptop) {
+			@apply grid col-start-3 col-end-4 row-start-1 row-end-6;
+		}
+	}
+	.thirdColorBlock {
+		@apply grid col-start-6 col-end-7 row-start-1 row-end-4 bg-darkBlue;
+		@include media(laptop) {
+			@apply grid col-start-1 col-end-4 row-start-6 row-end-7;
+		}
+	}
+
+	.firstBlock {
+		@apply grid col-start-2 col-end-4 row-start-2 row-end-3 z-[2];
+		> div {
+			background: url(./1.png) no-repeat;
+			@apply px-[30px] py-[40px] bg-cover text-[25px] font-bold;
+			@include media(tablet) {
+				@apply px-[15px] py-[20px] text-[22px];
+			}
+		}
+		@include media(laptop) {
+			@apply grid col-start-2 col-end-3 row-start-2 row-end-3;
+		}
+	}
+	.secondBlock {
+		@apply grid col-start-4 col-end-6 row-start-2 row-end-4 z-[2];
+		> div {
+			background: url(./2.png) no-repeat;
+			@apply px-[30px] py-[40px] bg-cover text-[25px] font-bold;
+			@include media(tablet) {
+				@apply px-[15px] py-[20px] text-[22px];
+			}
+		}
+		@include media(laptop) {
+			@apply grid col-start-2 col-end-3 row-start-3 row-end-4;
+		}
+	}
+	.thirdBlock {
+		@apply grid col-start-2 col-end-3 row-start-3 row-end-4;
+		> div {
+			background: url(./3.png) no-repeat;
+			@apply px-[30px] py-[40px] bg-cover text-[25px] font-bold;
+			@include media(tablet) {
+				@apply px-[15px] py-[20px] text-[22px];
+			}
+		}
+		@include media(laptop) {
+			@apply grid col-start-2 col-end-3 row-start-4 row-end-5;
+		}
+	}
+	.fourthBlock {
+		@apply grid col-start-3 col-end-4 row-start-3 row-end-4;
+		> div {
+			background: url(./4.png) no-repeat;
+			@apply px-[30px] py-[40px] bg-cover text-[25px] text-white font-bold;
+			@include media(tablet) {
+				@apply px-[15px] py-[20px] text-[22px];
+			}
+		}
+		@include media(laptop) {
+			@apply grid col-start-2 col-end-3 row-start-5 row-end-6;
+		}
+	}
+	@include media(laptop) {
+		@apply grid grid-cols-[20px_1fr_20px] grid-rows-[1fr_1fr_1fr_1fr_1fr_48px];
+	}
+}
