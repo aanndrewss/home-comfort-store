@@ -1,0 +1,26 @@
+@import '../../../styles/media';
+
+.wrapper {
+	@apply px-[100px] py-[100px];
+	.titleWrapper {
+		@apply flex flex-row justify-between items-center;
+		.title {
+			@apply text-darkBlue text-[20px] col-start-1 col-end-3;
+		}
+		.switcher {
+			@apply col-start-3 col-end-5 justify-end items-center;
+		}
+	}
+	.cards {
+		@apply grid grid-cols-4 gap-8 mt-[22px];
+		@include media(laptop) {
+			@apply grid-cols-3;
+		}
+		@include media(tablet) {
+			@apply grid-cols-2;
+		}
+		@include media(mobile) {
+			@apply grid-cols-1;
+		}
+	}
+}

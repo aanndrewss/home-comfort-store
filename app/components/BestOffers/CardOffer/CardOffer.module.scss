@@ -1,0 +1,30 @@
+.card {
+	@apply px-[15px] py-[10px];
+	.cardImg {
+		@apply w-[224px] h-[278px] px-[15px] py-[22px] relative;
+		background: url('./picture.png');
+		.discount {
+			@apply absolute top-[15px] right-[15px] rounded-full bg-white py-[13px] px-[5px] text-primaryBtn font-bold;
+		}
+	}
+
+	.name {
+		@apply mt-[24px] h-[63px];
+	}
+	.price {
+		@apply mt-[16px] flex flex-row items-center gap-[10px];
+		> b {
+			@apply text-[20px];
+		}
+		.fullPrice {
+			@apply text-gray-400 ml-[25px] relative;
+			&:before {
+				@apply content-[''] absolute border-b-[3px] border-b-red-700 w-[100%] h-[50%];
+				transform: rotate(-27deg);
+			}
+		}
+	}
+	.actions {
+		@apply grid grid-cols-[1fr_auto] gap-[16px] mt-[16px] items-center;
+	}
+}

@@ -33,10 +33,7 @@
 	.calcBtn {
 		@apply col-start-1 col-end-3 mt-[48px];
 	}
-	.switch {
-		@apply flex flex-row items-end gap-[7px] col-start-1 col-end-3;
-		.switcher {
-			@apply cursor-pointer;
-		}
+	.switcher {
+		@apply col-start-1 col-end-3;
 	}
 }

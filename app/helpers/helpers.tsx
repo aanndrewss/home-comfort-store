@@ -37,3 +37,30 @@ export const MenuItems = [
 		icon: <Calculator />
 	}
 ]
+
+export const CardItems = [
+	{
+		name: 'Вертикальные жалюзи «Lorem»',
+		price: 1200,
+		fullPrice: 10000,
+		discount: 10
+	},
+	{
+		name: 'Вертикальные жалюзи «Lorem». Длинное название в три строчки',
+		price: 1200,
+		fullPrice: 10000,
+		discount: 10
+	},
+	{
+		name: 'Вертикальные жалюзи «Lorem»',
+		price: 8000,
+		fullPrice: 10000,
+		discount: 15
+	},
+	{
+		name: 'Вертикальные жалюзи',
+		price: 1200,
+		fullPrice: 10000,
+		discount: 10
+	}
+]
