@@ -3,7 +3,7 @@ import { HeaderProps } from './Header.props'
 import styles from './Header.module.scss'
 import cn from 'classnames'
 import Burger from './burger.svg'
-import Cart from './Cart.svg'
+import Cart from './cart.svg'
 
 export const Header = ({ className, ...props }: HeaderProps): JSX.Element => {
 	return (
