@@ -1,0 +1,48 @@
+@import '../../../styles/media';
+
+.wrapper {
+	@apply bg-lightPrimary p-[56px];
+	@include media(tablet) {
+		@apply p-[30px];
+	}
+	@include media(mobile) {
+		@apply p-[20px];
+	}
+	.borderTitle {
+		@apply text-outlineColor flex flex-grow-0 items-center before:mr-5 before:block before:flex-1 before:border-b-2 before:border-primary after:ml-5 after:block after:flex-1 after:border-b-2 after:border-primary;
+		@include media(tablet) {
+			@apply text-center text-[13px] after:ml-2 before:mr-2;
+		}
+	}
+	.main {
+		@apply border-t-0 border-b-2 border-r-2 border-l-2 mt-[-12px] border-primary px-[100px] py-[60px] flex flex-col justify-center items-center;
+		@include media(laptop) {
+			@apply mt-[-11px];
+		}
+		@include media(mobile) {
+			@apply px-[24px] py-[40px] mt-[-10px];
+		}
+
+		.titleWrapper {
+			@apply flex flex-col justify-center items-center;
+			.title {
+				@apply text-[32px] text-outlineColor text-center;
+				@include media(tablet) {
+					@apply hidden;
+				}
+			}
+			.steps {
+				@apply mt-[10px];
+			}
+		}
+		.rooms {
+			@apply grid grid-cols-2 mt-[50px] gap-x-[100px] gap-y-[16px];
+			@include media(laptop) {
+				@apply grid-cols-1;
+			}
+		}
+		.btn {
+			@apply mt-[50px];
+		}
+	}
+}

@@ -26,6 +26,9 @@
 	}
 	.heading {
 		@apply text-[78px] leading-[78px] col-start-1 col-end-4;
+		@include media(mobile) {
+			@apply text-[42px] leading-[42px];
+		}
 	}
 	.secondHeading {
 		@apply text-[16px] leading-[21px] mt-[24px] font-thin col-start-1 col-end-3;

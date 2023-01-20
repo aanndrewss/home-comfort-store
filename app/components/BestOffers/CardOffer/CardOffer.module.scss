@@ -1,7 +1,7 @@
 .card {
 	@apply px-[15px] py-[10px];
 	.cardImg {
-		@apply w-[224px] h-[278px] px-[15px] py-[22px] relative;
+		@apply min-w-[224px] bg-cover min-h-[278px] px-[15px] py-[22px] relative;
 		background: url('./picture.png');
 		.discount {
 			@apply absolute top-[15px] right-[15px] rounded-full bg-white py-[13px] px-[5px] text-primaryBtn font-bold;

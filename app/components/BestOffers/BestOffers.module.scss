@@ -2,6 +2,9 @@
 
 .wrapper {
 	@apply px-[100px] py-[100px];
+	@include media(mobile) {
+		@apply p-[40px];
+	}
 	.titleWrapper {
 		@apply flex flex-row justify-between items-center;
 		.title {
@@ -12,15 +15,15 @@
 		}
 	}
 	.cards {
-		@apply grid grid-cols-4 gap-8 mt-[22px];
+		@apply grid grid-cols-4 gap-x-8 mt-[22px];
 		@include media(laptop) {
-			@apply grid-cols-3;
+			@apply grid-cols-3 gap-4;
 		}
 		@include media(tablet) {
-			@apply grid-cols-2;
+			@apply grid-cols-2 gap-2;
 		}
 		@include media(mobile) {
-			@apply grid-cols-1;
+			@apply grid-cols-1 gap-1;
 		}
 	}
 }
